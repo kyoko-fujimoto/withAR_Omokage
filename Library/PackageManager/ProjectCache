@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637797428990000000
+      ticks: 637797516610000000
     m_Hash: 416000670
   m_LockFileStatus:
     m_FilePath: /Users/kfujimoto/home/withAR_Omokage/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637797429020000000
+      ticks: 637797516610000000
     m_Hash: 4090782298
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -2769,8 +2769,10 @@ m_ResolvedPackages:
     - 1.0.0
     - 1.0.5
     - 1.0.6
+    - 2.0.2
     compatible:
     - 1.0.6
+    - 2.0.2
     verified: 1.0.6
   dependencies: []
   resolvedDependencies: []
@@ -3030,7 +3032,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: library
+  type: 
   description: 'Newtonsoft Json for use in Unity projects and Unity packages. Currently
     synced to version 12.0.2.
 
@@ -3045,10 +3047,22 @@ m_ResolvedPackages:
   errors: []
   versions:
     all:
+    - 1.0.0-preview.2
+    - 1.0.0-preview.3
+    - 1.0.0-preview.4
+    - 1.0.1-preview.1
+    - 1.1.2
+    - 2.0.0-preview
+    - 2.0.0-preview.1
+    - 2.0.0-preview.2
     - 2.0.0
+    - 2.0.1-preview.1
+    - 2.0.2
     compatible:
     - 2.0.0
-    verified: 2.0.0
+    - 2.0.1-preview.1
+    - 2.0.2
+    verified: 2.0.2
   dependencies: []
   resolvedDependencies: []
   keywords: []
@@ -3061,7 +3075,7 @@ m_ResolvedPackages:
     capabilities: 7
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 0
+  datePublishedTicks: 637237898320000000
   documentationUrl: 
   hasRepository: 1
   repository:
@@ -3097,8 +3111,20 @@ m_ResolvedPackages:
   versions:
     all:
     - 1.0.1
+    - 1.1.0-pre.7
+    - 1.1.0-pre.8
+    - 1.1.0-pre.9
+    - 1.1.0-pre.10
+    - 1.1.0-pre.11
+    - 1.1.0-pre.41
     compatible:
     - 1.0.1
+    - 1.1.0-pre.7
+    - 1.1.0-pre.8
+    - 1.1.0-pre.9
+    - 1.1.0-pre.10
+    - 1.1.0-pre.11
+    - 1.1.0-pre.41
     verified: 1.0.1
   dependencies:
   - name: com.unity.modules.unitywebrequest
@@ -3116,7 +3142,7 @@ m_ResolvedPackages:
     capabilities: 7
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 0
+  datePublishedTicks: 637604883250000000
   documentationUrl: 
   hasRepository: 1
   repository:
@@ -3154,8 +3180,12 @@ m_ResolvedPackages:
     - 1.0.1
     - 1.0.2
     - 1.0.3
+    - 2.0.0
+    - 2.0.1
     compatible:
     - 1.0.3
+    - 2.0.0
+    - 2.0.1
     verified: 1.0.3
   dependencies: []
   resolvedDependencies: []
