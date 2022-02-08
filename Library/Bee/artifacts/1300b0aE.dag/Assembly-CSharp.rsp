@@ -334,6 +334,7 @@
 -r:"Library/Bee/artifacts/1300b0aE.dag/PretiaSDK.Pcx.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/PretiaSDK.Pcx.Runtime.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/PretiaSDK.Runtime.ref.dll"
+-r:"Library/Bee/artifacts/1300b0aE.dag/PretiaSDK.Samples.MapBasedRelocSample.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/Unity.EditorCoroutines.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/Unity.Performance.Profile-Analyzer.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/Unity.PlasticSCM.Editor.ref.dll"

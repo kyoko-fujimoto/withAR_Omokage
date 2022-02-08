@@ -877,6 +877,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="PretiaSDK.Samples.MapBasedRelocSample.csproj">
+      <Project>{7e5fc967-341b-939f-806b-1e74af422329}</Project>
+      <Name>PretiaSDK.Samples.MapBasedRelocSample</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
