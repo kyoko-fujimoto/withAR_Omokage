@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637799172770000000
+      ticks: 637799192580000000
     m_Hash: 1338385333
   m_LockFileStatus:
     m_FilePath: /Users/kfujimoto/home/withAR_Omokage/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637799172780000000
+      ticks: 637799192580000000
     m_Hash: 3019297409
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
