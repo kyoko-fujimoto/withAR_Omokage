@@ -8,8 +8,10 @@ public class ScoreUpdater : MonoBehaviour
     [SerializeField]
     private ARSharedAnchorManager _relocManager;
 
+/*
     [SerializeField]
     private Text _scoreLabel;
+*/
 
     void Start() {
         OnScoreUpdated(0);
@@ -25,6 +27,6 @@ public class ScoreUpdater : MonoBehaviour
 
     void OnScoreUpdated(float score)
     {
-        _scoreLabel.text = "Score: " + Mathf.Floor(score * 100);
+        //_scoreLabel.text = "Score: " + Mathf.Floor(score * 100);
     }
 }
