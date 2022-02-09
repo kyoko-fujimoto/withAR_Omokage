@@ -308,6 +308,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 234552990969446997, guid: 0214e7222e351431689306a96175aba2, type: 3}
+      propertyPath: m_WrapMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 234552990969446997, guid: 0214e7222e351431689306a96175aba2, type: 3}
+      propertyPath: m_PlayableAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 2adc047687f264ba3a8c76aec239fe81, type: 2}
+    - target: {fileID: 234552990969446997, guid: 0214e7222e351431689306a96175aba2, type: 3}
+      propertyPath: m_SceneBindings.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 234552990969446997, guid: 0214e7222e351431689306a96175aba2, type: 3}
+      propertyPath: m_SceneBindings.Array.data[1].key
+      value: 
+      objectReference: {fileID: -4168365756776868647, guid: 2adc047687f264ba3a8c76aec239fe81, type: 2}
+    - target: {fileID: 234552990969446997, guid: 0214e7222e351431689306a96175aba2, type: 3}
+      propertyPath: m_SceneBindings.Array.data[1].value
+      value: 
+      objectReference: {fileID: 1343888564}
     - target: {fileID: 345640063749199098, guid: 0214e7222e351431689306a96175aba2, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -356,5 +376,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: kage
       objectReference: {fileID: 0}
+    - target: {fileID: 5921064840911638144, guid: 0214e7222e351431689306a96175aba2, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: a673337c07a14484d9282b54728e042c, type: 2}
+    - target: {fileID: 5921064840911638144, guid: 0214e7222e351431689306a96175aba2, type: 3}
+      propertyPath: m_CullingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5921064840911638144, guid: 0214e7222e351431689306a96175aba2, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0214e7222e351431689306a96175aba2, type: 3}
+--- !u!95 &1343888564 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5921064840911638144, guid: 0214e7222e351431689306a96175aba2, type: 3}
+  m_PrefabInstance: {fileID: 1343888563}
+  m_PrefabAsset: {fileID: 0}
