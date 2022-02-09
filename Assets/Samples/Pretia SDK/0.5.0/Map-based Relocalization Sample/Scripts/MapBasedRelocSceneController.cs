@@ -28,11 +28,11 @@ public class MapBasedRelocSceneController : MonoBehaviour
             _isRunning = value;
             if (value)
             {
-                _startButtonLabel.text = "Stop";
+                //_startButtonLabel.text = "Stop";
             }
             else
             {
-                _startButtonLabel.text = "Start";
+                //_startButtonLabel.text = "Start";
             }
         }
     }
