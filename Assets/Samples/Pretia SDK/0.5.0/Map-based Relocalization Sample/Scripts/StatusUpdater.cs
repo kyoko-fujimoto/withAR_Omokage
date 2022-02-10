@@ -8,14 +8,12 @@ public class StatusUpdater : MonoBehaviour
     [SerializeField]
     private ARSharedAnchorManager _relocManager;
 
-/*
     [SerializeField]
     private Text _statusLabel;
-*/
 
     void Start()
     {
-        //_statusLabel.text = "Stopped";
+        _statusLabel.text = "Stopped";
     }
 
     void OnEnable()
@@ -33,19 +31,19 @@ public class StatusUpdater : MonoBehaviour
         switch (state)
         {
             case SharedAnchorState.Stopped:
-                //_statusLabel.text = "Stopped";
+                _statusLabel.text = "Stopped";
                 break;
 
             case SharedAnchorState.Initializing:
-                //_statusLabel.text = "Initializing";
+                _statusLabel.text = "Initializing";
                 break;
 
             case SharedAnchorState.Relocalizing:
-                //_statusLabel.text = "Relocalizing";
+                _statusLabel.text = "Relocalizing";
                 break;
 
             case SharedAnchorState.Relocalized:
-                //_statusLabel.text = "Relocalized";
+                _statusLabel.text = "Relocalized";
                 break;
         }
     }
