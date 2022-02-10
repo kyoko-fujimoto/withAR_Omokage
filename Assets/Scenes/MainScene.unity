@@ -315,6 +315,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _relocManager: {fileID: 1705777696}
+  _statusLabel: {fileID: 2019657331}
 --- !u!1 &182372732
 GameObject:
   m_ObjectHideFlags: 0
@@ -2508,7 +2509,7 @@ GameObject:
   - component: {fileID: 2019657332}
   - component: {fileID: 2019657331}
   m_Layer: 5
-  m_Name: ScanningStatue
+  m_Name: ScanningStatus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
