@@ -6,6 +6,6 @@ public class StartScanButton : MonoBehaviour
 {
     public void OnClick()
     {
-        ButtonManager.instance.LoadMainScene();
+        MainSceneButtonManager.instance.OpenScanningPanel();
     }
 }
