@@ -23,6 +23,11 @@ public class MainSceneButtonManager : MonoBehaviour
         }
 
         SetHeader(true);
+        
+        ScanningPanel.SetActive(false);
+        TutorialPanel.SetActive(true);
+        MainScenePanel.SetActive(false);
+        PlaceImagePanel.SetActive(false);
     }
 
     // ヘッダーを表示するかどうかを設定する

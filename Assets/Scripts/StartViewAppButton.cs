@@ -6,7 +6,7 @@ public class StartViewAppButton : MonoBehaviour
 {
     public void OnClick()
     {
-        ButtonManager.instance.OpenScanCanvas();
+        ButtonManager.instance.LoadMainScene();
     }
 }
 

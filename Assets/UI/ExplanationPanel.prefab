@@ -629,7 +629,7 @@ GameObject:
   - component: {fileID: 8301766554610829748}
   - component: {fileID: 911128757558056171}
   m_Layer: 5
-  m_Name: ExplanationPanel 1
+  m_Name: ExplanationPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
