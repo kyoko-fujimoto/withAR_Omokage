@@ -13,12 +13,22 @@ public class MainSceneButtonManager : MonoBehaviour
 
     [SerializeField] GameObject PlaceImagePanel;
     
+    [SerializeField] GameObject Header;
+    
     public void Awake()
     {
         if(instance == null)
         {
             instance = this;
         }
+
+        SetHeader(true);
+    }
+
+    // ヘッダーを表示するかどうかを設定する
+    public void SetHeader(bool isActived)
+    {
+        Header.SetActive(isActived);
     }
 
     // ScanningPanel を呼び出し
