@@ -1,18 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using PretiaArCloud;
 
 public class ForceSkipButton : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField]
+    private ARSharedAnchorManager _relocManager;
+    
+    public void OnClick()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        _relocManager.ResetSharedAnchor();    
+    
+        MainSceneButtonManager.instance.OpenTutorialPanel(); 
     }
 }
