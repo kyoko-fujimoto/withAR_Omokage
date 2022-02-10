@@ -10,12 +10,22 @@ public class ButtonManager : MonoBehaviour
     [SerializeField] GameObject TopPanel;
     [SerializeField] GameObject ScanPanel;
     
+    [SerializeField] GameObject Header;
+    
     public void Awake()
     {
         if(instance == null)
         {
             instance = this;
         }
+
+        SetHeader(false);
+    }
+
+    // ヘッダーを表示するかどうかを設定する
+    public void SetHeader(bool isActived)
+    {
+        Header.SetActive(isActived);
     }
 
     // メインシーンへ移動
@@ -36,5 +46,7 @@ public class ButtonManager : MonoBehaviour
     {
         TopPanel.SetActive(false);
         ScanPanel.SetActive(true);
+
+        SetHeader(true);
     }
 }
