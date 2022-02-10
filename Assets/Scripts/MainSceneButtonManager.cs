@@ -15,6 +15,9 @@ public class MainSceneButtonManager : MonoBehaviour
     
     [SerializeField] GameObject Header;
     
+    [SerializeField] GameObject ButtonPanel;
+    [SerializeField] GameObject MessageWindow;
+    
     public void Awake()
     {
         if(instance == null)
@@ -34,6 +37,18 @@ public class MainSceneButtonManager : MonoBehaviour
     public void SetHeader(bool isActived)
     {
         Header.SetActive(isActived);
+    }
+
+    // ButtonPanel を表示するかどうかを設定する
+    public void SetButtonPanel(bool isActived)
+    {
+        ButtonPanel.SetActive(isActived);
+    }
+    
+    // MessageWindow を表示するかどうかを設定する
+    public void SetMessageWindow(bool isActived)
+    {
+        MessageWindow.SetActive(isActived);
     }
 
     // ScanningPanel を呼び出し
