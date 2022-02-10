@@ -2,11 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StartViewAppButton : MonoBehaviour
+public class CloseButton : MonoBehaviour
 {
     public void OnClick()
     {
-        ButtonManager.instance.LoadMainScene();
+        MainSceneButtonManager.instance.CloseMapPanel();
     }
 }
-
