@@ -19,13 +19,16 @@ public class MessageWindow : MonoBehaviour
     
     private string[] textMessageData;
 
-    void Start()
+    public void Awake()
     {
         if(instance == null)
         {
             instance = this;
         }
+    }
 
+    void Start()
+    {
         var loadText = _textAsset.text;
         textMessageData = loadText.Split("rn", StringSplitOptions.None);
     }

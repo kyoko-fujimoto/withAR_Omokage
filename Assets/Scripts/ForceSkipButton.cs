@@ -12,6 +12,6 @@ public class ForceSkipButton : MonoBehaviour
     {
         _relocManager.ResetSharedAnchor();    
     
-        MainSceneButtonManager.instance.OpenTutorialPanel(); 
+        MainSceneButtonManager.instance.StartTutorial(); 
     }
 }

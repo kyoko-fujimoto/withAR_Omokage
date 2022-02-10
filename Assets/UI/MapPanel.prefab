@@ -588,7 +588,6 @@ GameObject:
   - component: {fileID: 8301766555080021309}
   - component: {fileID: 8301766555080021314}
   - component: {fileID: 8301766555080021315}
-  - component: {fileID: 8301766555080021308}
   m_Layer: 5
   m_Name: CloseButton
   m_TagString: Untagged
@@ -699,7 +698,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8301766555080021308}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: StartScanButton, Assembly-CSharp
         m_MethodName: OnClick
         m_Mode: 1
@@ -711,15 +710,3 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &8301766555080021308
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8301766555080021318}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1750d1657b654ccbab714d0af1fa4f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

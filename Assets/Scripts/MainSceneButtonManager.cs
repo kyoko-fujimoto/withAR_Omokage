@@ -9,6 +9,7 @@ public class MainSceneButtonManager : MonoBehaviour
 
     [SerializeField] GameObject ScanningPanel;
     [SerializeField] GameObject TutorialPanel;
+    [SerializeField] GameObject MapPanel;
     [SerializeField] GameObject MainScenePanel;
 
     [SerializeField] GameObject PlaceImagePanel;
@@ -16,7 +17,7 @@ public class MainSceneButtonManager : MonoBehaviour
     [SerializeField] GameObject Header;
     
     [SerializeField] GameObject ButtonPanel;
-    [SerializeField] GameObject MessageWindow;
+    [SerializeField] GameObject MessageWindowObject;
     
     public void Awake()
     {
@@ -48,7 +49,7 @@ public class MainSceneButtonManager : MonoBehaviour
     // MessageWindow を表示するかどうかを設定する
     public void SetMessageWindow(bool isActived)
     {
-        MessageWindow.SetActive(isActived);
+        MessageWindowObject.SetActive(isActived);
     }
 
     // ScanningPanel を呼び出し
@@ -74,7 +75,34 @@ public class MainSceneButtonManager : MonoBehaviour
         TutorialPanel.SetActive(true);
         MainScenePanel.SetActive(false);
     }
+
+    // MapPanel を呼び出し
+    public void OpenMapPanel()
+    {
+        ScanningPanel.SetActive(false);
+        TutorialPanel.SetActive(false);
+        MapPanel.SetActive(true);
+        MainScenePanel.SetActive(false);
+    }
     
+    // MapPanel を閉じる
+    public void CloseMapPanel()
+    {
+        MapPanel.SetActive(false);
+    }
+
+    // チュートリアルを始める
+    public void StartTutorial()
+    {
+        ScanningPanel.SetActive(false);
+        TutorialPanel.SetActive(false);
+        MapPanel.SetActive(false);
+        MainScenePanel.SetActive(false);
+
+        SetMessageWindow(true);
+        MessageWindow.instance.setMessageText(0);
+    }
+
     // MainScenePanel を呼び出し
     public void OpenMainScenePanel()
     {
