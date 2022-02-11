@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: shadow
-  m_Shader: {fileID: -6465566751694194690, guid: cbc3559e433b94b4aa0ba3a0c17cc060, type: 3}
+  m_Name: Shadow_female
+  m_Shader: {fileID: -6465566751694194690, guid: 077e88946ae5a49fdae7b364cb5eb63c, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -24,11 +24,12 @@ Material:
     - _BUILTIN_QueueControl: 0
     - _BUILTIN_QueueOffset: 0
     - _NoiseScale: 58
-    - _TimeScale: 0.002
+    - _TimeScale: 0.01
+    - _cavity: 0.5
     m_Colors:
     - _Tiling: {r: 0.42, g: 3.08, b: 0, a: 0}
   m_BuildTextureStacks: []
---- !u!114 &8439351294011791406
+--- !u!114 &2165450931389257207
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
