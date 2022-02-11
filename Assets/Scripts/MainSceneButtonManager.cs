@@ -19,6 +19,7 @@ public class MainSceneButtonManager : MonoBehaviour
     [SerializeField] GameObject MessageWindowObject;
 
     [SerializeField] GameObject CompleteButton;
+    [SerializeField] GameObject SpawnObject;
 
     public void Awake()
     {
@@ -117,8 +118,9 @@ public class MainSceneButtonManager : MonoBehaviour
         TutorialPanel.SetActive(false);
         MapPanel.SetActive(false);
         MainScenePanel.SetActive(false);
-
         OpenMapPanel();
+        SpawnObject.SetActive(true);
+        
     }
 
     // MainScenePanel を呼び出し
@@ -128,4 +130,5 @@ public class MainSceneButtonManager : MonoBehaviour
         TutorialPanel.SetActive(false);
         MainScenePanel.SetActive(true);
     }
+
 }
