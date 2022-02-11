@@ -2731,7 +2731,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 8e4ee4de99bf94f2ea6bb6f9497a53f3, type: 3}
+  m_audioClip: {fileID: 8300000, guid: b42f4485652b4456992461917d3173c0, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -2914,6 +2914,25 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 3.85
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!320 &6855197072221882985
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6044926618132576036}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: 8f180152a40f5450587c021ce9efeea5, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 1
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: -6121929306000390443, guid: 8f180152a40f5450587c021ce9efeea5, type: 2}
+    value: {fileID: 6855197072221882984}
+  m_ExposedReferences:
+    m_References: []
 --- !u!82 &6855197072221882991
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3019,25 +3038,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!320 &6855197072221882985
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6044926618132576036}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 8f180152a40f5450587c021ce9efeea5, type: 2}
-  m_InitialState: 1
-  m_WrapMode: 1
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings:
-  - key: {fileID: -6121929306000390443, guid: 8f180152a40f5450587c021ce9efeea5, type: 2}
-    value: {fileID: 6855197072221882984}
-  m_ExposedReferences:
-    m_References: []
 --- !u!95 &6855197072221882984
 Animator:
   serializedVersion: 4
