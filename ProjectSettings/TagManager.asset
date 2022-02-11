@@ -7,6 +7,8 @@ TagManager:
   - Shadow
   - Edge
   - AudioSource
+  - Shadow_man
+  - Shadow_child
   layers:
   - Default
   - TransparentFX
