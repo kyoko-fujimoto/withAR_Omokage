@@ -36,6 +36,6 @@ public class MapBasedRelocSceneController : MonoBehaviour
 
     private void OnRelocalized()
     {
-        //MainSceneButtonManager.instance.StartTutorial();
+        MainSceneButtonManager.instance.SetCompleteButton(true);
     }
 }
