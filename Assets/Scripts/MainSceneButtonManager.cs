@@ -19,6 +19,7 @@ public class MainSceneButtonManager : MonoBehaviour
     [SerializeField] GameObject MessageWindowObject;
 
     [SerializeField] GameObject CompleteButton;
+    [SerializeField] GameObject ReconfirmButton;
     [SerializeField] GameObject SpawnObject;
 
     public void Awake()
@@ -66,6 +67,12 @@ public class MainSceneButtonManager : MonoBehaviour
     public void SetCompleteButton(bool isActived)
     {
         CompleteButton.SetActive(isActived);
+    } 
+    
+    // マップを再表示するかどうかを設定する
+    public void SetReconfirmButton(bool isActived)
+    {
+        ReconfirmButton.SetActive(isActived);
     } 
     
     // ScanningPanel を呼び出し
@@ -123,9 +130,8 @@ public class MainSceneButtonManager : MonoBehaviour
         TutorialPanel.SetActive(false);
         MapPanel.SetActive(false);
         MainScenePanel.SetActive(false);
+        
         OpenMapPanel();
-        
-        
     }
 
     // MainScenePanel を呼び出し
