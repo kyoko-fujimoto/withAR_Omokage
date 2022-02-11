@@ -100,7 +100,7 @@ public class MainSceneButtonManager : MonoBehaviour
         MainScenePanel.SetActive(false);
 
         SetMessageWindow(true);
-        MessageWindow.instance.setMessageText(0);
+        MessageWindow.instance.setTutorialText();
     }
 
     // MainScenePanel を呼び出し
