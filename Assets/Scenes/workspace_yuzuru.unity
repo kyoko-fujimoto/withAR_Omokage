@@ -599,7 +599,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 959682752}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6826afe3d8f414fe994f508704f571c0, type: 3}
+  m_Script: {fileID: 11500000, guid: 89ec1833880da4a6cac0faeb2fa9af68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _cavity: 0.5
@@ -929,7 +929,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-1674
+  m_Name: pb_Mesh-22454
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1199,6 +1199,10 @@ PrefabInstance:
       propertyPath: m_ReceiveShadows
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5165587962497709035, guid: 0214e7222e351431689306a96175aba2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1822b047304c9415684d2cbcf1cdb471, type: 2}
     - target: {fileID: 5921064840911638144, guid: 0214e7222e351431689306a96175aba2, type: 3}
       propertyPath: m_Controller
       value: 
@@ -1253,7 +1257,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c7d1291d6d2145be94e600b80e99838, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _material: {fileID: 2100000, guid: 9770bfb47c25a4288ba95cf2a9b03215, type: 2}
+  _material: {fileID: 2100000, guid: 1822b047304c9415684d2cbcf1cdb471, type: 2}
 --- !u!1001 &1793119944
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1324,7 +1328,7 @@ PrefabInstance:
     - target: {fileID: -7676281129431669945, guid: d1801b9631da049309e327c2a4047513, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: e84ef189471824577ad030387a855e69, type: 2}
+      objectReference: {fileID: 2100000, guid: 6f14a381cabc14767ab37637c309e4ba, type: 2}
     - target: {fileID: 919132149155446097, guid: d1801b9631da049309e327c2a4047513, type: 3}
       propertyPath: m_Name
       value: kage

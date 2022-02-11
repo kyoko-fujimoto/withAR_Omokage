@@ -11,7 +11,6 @@ public class ShadowMaterialDissolve : MonoBehaviour
         for (float t = 0; t <= duration; t += Time.deltaTime)
         {
             _material.SetFloat("_cavity", Mathf.Lerp(startScale, endScale, t / duration));
-            Debug.Log("dissolve!");
             yield return null;
         }
     }
