@@ -7,6 +7,9 @@ public class ButtonManager : MonoBehaviour
 {
     public static ButtonManager instance;
 
+    [SerializeField] GameObject HomePanel;
+    [SerializeField] GameObject AreaListPanel;
+    
     public void Awake()
     {
         if(instance == null)
@@ -19,5 +22,11 @@ public class ButtonManager : MonoBehaviour
     public void LoadMainScene()
     {
         SceneManager.LoadScene("MainScene");
+    }
+    
+    public void OpenAreaPanel()
+    {
+        HomePanel.SetActive(false);
+        AreaListPanel.SetActive(true);
     }
 }
