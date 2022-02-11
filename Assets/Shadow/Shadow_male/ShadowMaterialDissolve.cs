@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class ShadowMaterialDissolve : MonoBehaviour
 {
-    [SerializeField] private Material _material;
 
-    public IEnumerator ShadowFade(float duration, float startScale, float endScale)
+    public IEnumerator ShadowFade(float duration, float startScale, float endScale, Material _material)
     {
         for (float t = 0; t <= duration; t += Time.deltaTime)
         {
