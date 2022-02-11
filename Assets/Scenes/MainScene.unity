@@ -844,7 +844,7 @@ MonoBehaviour:
   ButtonPanel: {fileID: 625481014}
   MessageWindowObject: {fileID: 1823979826}
   CompleteButton: {fileID: 2091451524}
-  SpawnObject: {fileID: 0}
+  SpawnObject: {fileID: 1661051991}
 --- !u!4 &518500490
 Transform:
   m_ObjectHideFlags: 0
@@ -1066,7 +1066,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-66378
+  m_Name: pb_Mesh-27540
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2684,6 +2684,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _relocManager: {fileID: 1705777696}
   _arContents: {fileID: 1371668541}
+--- !u!1 &1661051991 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1856543298864603959, guid: 6d1e28632758f429a8685cb1973194d8, type: 3}
+  m_PrefabInstance: {fileID: 1949311008347760471}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1705777693
 GameObject:
   m_ObjectHideFlags: 0
@@ -3586,7 +3591,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1856543298864603959, guid: 6d1e28632758f429a8685cb1973194d8, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d1e28632758f429a8685cb1973194d8, type: 3}
