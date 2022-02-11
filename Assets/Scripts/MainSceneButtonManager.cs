@@ -12,13 +12,13 @@ public class MainSceneButtonManager : MonoBehaviour
     [SerializeField] GameObject MapPanel;
     [SerializeField] GameObject MainScenePanel;
 
-    [SerializeField] GameObject PlaceImagePanel;
-    
     [SerializeField] GameObject Header;
     
     [SerializeField] GameObject ButtonPanel;
     [SerializeField] GameObject MessageWindowObject;
-    
+
+    [SerializeField] GameObject CompleteButton;
+
     public void Awake()
     {
         if(instance == null)
@@ -31,7 +31,9 @@ public class MainSceneButtonManager : MonoBehaviour
         ScanningPanel.SetActive(false);
         TutorialPanel.SetActive(true);
         MainScenePanel.SetActive(false);
-        PlaceImagePanel.SetActive(false);
+
+        MessageWindowObject.SetActive(false);
+        CompleteButton.SetActive(false);
     }
 
     // ヘッダーを表示するかどうかを設定する
@@ -51,23 +53,21 @@ public class MainSceneButtonManager : MonoBehaviour
     {
         MessageWindowObject.SetActive(isActived);
     }
-
+    
+    // コンプリートボタンを表示するかどうかを設定する
+    public void SetCompleteButton(bool isActived)
+    {
+        CompleteButton.SetActive(isActived);
+    } 
+    
     // ScanningPanel を呼び出し
     public void OpenScanningPanel()
     {
         ScanningPanel.SetActive(true);
         TutorialPanel.SetActive(false);
         MainScenePanel.SetActive(false);
-        PlaceImagePanel.SetActive(false);
     }
 
-    // PlaceImagePanel を呼び出し 
-    public void OpenPlaceImagePanel()
-    {
-        ScanningPanel.SetActive(false);
-        PlaceImagePanel.SetActive(true);
-    }
-    
     // TutorialPanel を呼び出し
     public void OpenTutorialPanel()
     {
@@ -94,6 +94,8 @@ public class MainSceneButtonManager : MonoBehaviour
     // チュートリアルを始める
     public void StartTutorial()
     {
+        SetCompleteButton(false);
+
         ScanningPanel.SetActive(false);
         TutorialPanel.SetActive(false);
         MapPanel.SetActive(false);
