@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 using TMPro;
 
@@ -18,6 +19,8 @@ public class MessageWindow : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI _speakerName;
     
+    public UnityEvent onClick = new UnityEvent();
+
     private string[] textMessage = null;
     private string[,] textWords = null;
 
@@ -67,5 +70,12 @@ public class MessageWindow : MonoBehaviour
         {
             _speakerName.text = textWords[0, 1];
         }
+
+        onClick.AddListener(setDisable);
+    }
+
+    void setDisable()
+    {
+        this.gameObject.SetActive(false);
     }
 }
