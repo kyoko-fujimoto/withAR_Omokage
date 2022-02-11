@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class MessageWindow : MonoBehaviour
@@ -17,36 +18,54 @@ public class MessageWindow : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI _speakerName;
     
-    private string[] textMessageData;
+    private string[] textMessage = null;
+    private string[,] textWords = null;
 
-    public void Awake()
+    private int rowLength;
+    private int columnLength;
+
+    void Awake()
     {
         if(instance == null)
         {
             instance = this;
         }
-    }
-
-    void Start()
-    {
+        
         var loadText = _textAsset.text;
-        textMessageData = loadText.Split("rn", StringSplitOptions.None);
+
+        textMessage = loadText.Split('\n');
+
+        columnLength = textMessage[0].Split(',').Length;
+        rowLength = textMessage.Length - 1;
+
+        textWords = new string[rowLength, columnLength];
+
+        for(int i = 0; i < rowLength; ++i)
+        {
+            string[] tempWords = textMessage[i].Split(',');
+
+            for (int n = 0; n < columnLength; ++n)
+            {
+                textWords[i, n] = tempWords[n];
+                Debug.Log(textWords[i,n]);
+            }
+        }
     }
 
-    public void setMessageText(int index)
+    public void setTutorialText()
     {
-        // index がデータの範囲外なら空白を設定する
-        if (index < 0 || textMessageData.Length < index)
+        if (textWords == null)
         {
-            _textMessage.text = "";
-            _speakerName.text = "";
-            
             return;
         }
 
-        var splitText = textMessageData[index].Split(',');
-
-        _textMessage.text = splitText[2];
-        _speakerName.text = splitText[1];
+        if (textWords[0, 2] != null)
+        {
+            _textMessage.text = textWords[0, 2];
+        }
+        if (textWords[0, 1] != null)
+        {
+            _speakerName.text = textWords[0, 1];
+        }
     }
 }
