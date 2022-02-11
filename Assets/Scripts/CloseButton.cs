@@ -7,5 +7,6 @@ public class CloseButton : MonoBehaviour
     public void OnClick()
     {
         MainSceneButtonManager.instance.CloseMapPanel();
+        MainSceneButtonManager.instance.SetActiveSpawnObject();
     }
 }

@@ -109,6 +109,11 @@ public class MainSceneButtonManager : MonoBehaviour
         ButtonPanel.SetActive(true);
     }
 
+    public void SetActiveSpawnObject()
+    {
+        SpawnObject.SetActive(true);
+    }
+
     // チュートリアルを始める
     public void StartTutorial()
     {
@@ -119,7 +124,7 @@ public class MainSceneButtonManager : MonoBehaviour
         MapPanel.SetActive(false);
         MainScenePanel.SetActive(false);
         OpenMapPanel();
-        SpawnObject.SetActive(true);
+        
         
     }
 
