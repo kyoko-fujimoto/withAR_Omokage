@@ -118,8 +118,7 @@ public class MainSceneButtonManager : MonoBehaviour
         MapPanel.SetActive(false);
         MainScenePanel.SetActive(false);
 
-        SetMessageWindow(true);
-        MessageWindow.instance.setTutorialText();
+        OpenMapPanel();
     }
 
     // MainScenePanel を呼び出し
