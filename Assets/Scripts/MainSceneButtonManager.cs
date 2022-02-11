@@ -9,6 +9,7 @@ public class MainSceneButtonManager : MonoBehaviour
 
     [SerializeField] GameObject ScanningPanel;
     [SerializeField] GameObject TutorialPanel;
+    [SerializeField] GameObject TutorialAgainPanel;
     [SerializeField] GameObject MapPanel;
     [SerializeField] GameObject MainScenePanel;
 
@@ -34,6 +35,12 @@ public class MainSceneButtonManager : MonoBehaviour
 
         MessageWindowObject.SetActive(false);
         CompleteButton.SetActive(false);
+    }
+
+    // タイトルシーンへ移動
+    public void LoadTitleScene()
+    {
+        SceneManager.LoadScene("TitleScene");
     }
 
     // ヘッダーを表示するかどうかを設定する
@@ -65,6 +72,7 @@ public class MainSceneButtonManager : MonoBehaviour
     {
         ScanningPanel.SetActive(true);
         TutorialPanel.SetActive(false);
+        TutorialAgainPanel.SetActive(false);
         MainScenePanel.SetActive(false);
     }
 
@@ -73,6 +81,14 @@ public class MainSceneButtonManager : MonoBehaviour
     {
         ScanningPanel.SetActive(false);
         TutorialPanel.SetActive(true);
+        MainScenePanel.SetActive(false);
+    }
+    
+    // TutorialAgainPanel を呼び出し
+    public void OpenTutorialAgainPanel()
+    {
+        ScanningPanel.SetActive(false);
+        TutorialAgainPanel.SetActive(true);
         MainScenePanel.SetActive(false);
     }
 
@@ -89,6 +105,7 @@ public class MainSceneButtonManager : MonoBehaviour
     public void CloseMapPanel()
     {
         MapPanel.SetActive(false);
+        ButtonPanel.SetActive(true);
     }
 
     // チュートリアルを始める

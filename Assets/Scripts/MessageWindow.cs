@@ -16,9 +16,6 @@ public class MessageWindow : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI _textMessage;
     
-    [SerializeField]
-    private TextMeshProUGUI _speakerName;
-    
     public UnityEvent onClick = new UnityEvent();
 
     private string[] textMessage = null;
@@ -50,7 +47,6 @@ public class MessageWindow : MonoBehaviour
             for (int n = 0; n < columnLength; ++n)
             {
                 textWords[i, n] = tempWords[n];
-                Debug.Log(textWords[i,n]);
             }
         }
     }
@@ -62,13 +58,9 @@ public class MessageWindow : MonoBehaviour
             return;
         }
 
-        if (textWords[0, 2] != null)
-        {
-            _textMessage.text = textWords[0, 2];
-        }
         if (textWords[0, 1] != null)
         {
-            _speakerName.text = textWords[0, 1];
+            _textMessage.text = textWords[0, 1].Replace("<br>", "\n");
         }
 
         onClick.AddListener(setDisable);
@@ -77,5 +69,6 @@ public class MessageWindow : MonoBehaviour
     void setDisable()
     {
         this.gameObject.SetActive(false);
+        MainSceneButtonManager.instance.OpenMapPanel();
     }
 }
