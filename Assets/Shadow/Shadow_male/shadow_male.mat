@@ -23,9 +23,9 @@ Material:
     m_Floats:
     - _BUILTIN_QueueControl: 0
     - _BUILTIN_QueueOffset: 0
-    - _NoiseScale: 96
-    - _TimeScale: 0.02
-    - _cavity: 0.5007907
+    - _NoiseScale: 58
+    - _TimeScale: 0.01
+    - _cavity: 0.5
     m_Colors:
     - _Tiling: {r: 0.42, g: 3.08, b: 0, a: 0}
   m_BuildTextureStacks: []

@@ -6,12 +6,12 @@ TagManager:
   tags:
   - Shadow
   - Edge
-  - AudioSouce
+  - AudioSource
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - shadow
   - Water
   - UI
   - 
