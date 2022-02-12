@@ -25,7 +25,7 @@ Material:
     - _BUILTIN_QueueOffset: 0
     - _NoiseScale: 58
     - _TimeScale: 0.01
-    - _cavity: 0.5008398
+    - _cavity: 0.5435442
     m_Colors:
     - _Tiling: {r: 0.42, g: 3.08, b: 0, a: 0}
   m_BuildTextureStacks: []

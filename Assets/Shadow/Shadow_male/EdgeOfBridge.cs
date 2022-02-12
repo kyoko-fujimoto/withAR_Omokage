@@ -30,6 +30,7 @@ public class EdgeOfBridge : MonoBehaviour
             _shadow.transform.position = _startPos;
             _shadow.gameObject.SetActive(true);
             yield return StartCoroutine(dissolve.ShadowFade(_duration, 1, _cavity, _material));
+            Debug.Log("man");
         }
         else if (other.CompareTag("Shadow_child"))
         {
@@ -41,6 +42,7 @@ public class EdgeOfBridge : MonoBehaviour
             _shadow.transform.position = _startPos;
             _shadow.gameObject.SetActive(true);
             yield return StartCoroutine(dissolve.ShadowFade(_duration, 1, _cavity, _material));
+            Debug.Log("child");
         }
     }
 }
